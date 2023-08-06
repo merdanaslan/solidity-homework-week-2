@@ -14,18 +14,37 @@ https://sepolia.etherscan.io/tx/0xcf86e87f1b8e300139c084250c6e667195b8c612f9cd4e
 ### Vote transactions
 * https://sepolia.etherscan.io/tx/0xfd1ef1ce8c160236837f4e16f14f6c42ecf6a7f8bea475927c6718863518e7bb
 * https://sepolia.etherscan.io/tx/0xe37b2d6acee209f3cf9ab4315845470d3d53e14e30e519cbed8a6c817b0a4cdf
+* https://sepolia.etherscan.io/tx/0x38ae2164103adc3337ab8cab0cf6f65a65895afa9a612a4c715e840f83cbc839
 
 
 ### Rejected vote transactions 
 
 * https://sepolia.etherscan.io/tx/0x2dee49ea5c5c946083ccda720c428b6ae8adae78ddba2bdd9ce3a90f28ce0955 **already voted**
+* https://sepolia.etherscan.io/tx/0xc2185c0de9dcd4b138071e04b4571d7985aa23c0350f4320811e0c0d65221e37 **Fail with error 'You already voted.'**
 
 
 ### Voting results 
+```
+yarn run viewProposals 0x4273e5B36290bC44D38d580a9500Fbec63B155D6
+Using address 0xFF5Bfd797E2F6949099885d00B681a780Ba6021e
+Wallet balance 0.9981877764536944
+Viewing proposals for contract: 0x4273e5B36290bC44D38d580a9500Fbec63B155D6
+Proposal 0: Pizza with 0 votes
+Proposal 1: Burger with 3 votes
+Proposal 2: Taco with 0 votes
 
+yarn run winner:proposal 0x4273e5B36290bC44D38d580a9500Fbec63B155D6
+Getting the winning proposal for 0x4273e5B36290bC44D38d580a9500Fbec63B155D6
+Using address 0xFF5Bfd797E2F6949099885d00B681a780Ba6021e
+Wallet balance 0.9981877764536944
+Winning proposal is proposal 1: Burger with 3 votes
 
-
-
+yarn run winner:name 0x4273e5B36290bC44D38d580a9500Fbec63B155D6
+Getting the winner name of 0x4273e5B36290bC44D38d580a9500Fbec63B155D6
+Using address 0xFF5Bfd797E2F6949099885d00B681a780Ba6021e
+Wallet balance 0.9981877764536944
+Winner: Burger
+```
 
 ### Note 
 
@@ -50,11 +69,11 @@ JsonRpcProvider failed to detect network and cannot start up; retry in 1s (perha
 JsonRpcProvider failed to detect network and cannot start up; retry in 1s (perhaps the URL is wrong or the node is not started)
 JsonRpcProvider failed to detect network and cannot start up; retry in 1s (perhaps the URL is wrong or the node is not started)
 ```
-**The error dissapeared when using alchemy instead**
+**The error disappeared when using alchemy instead**
 
 * I got another Error: Warning! Error encountered during contract execution [out of gas] https://sepolia.etherscan.io/tx/0x998191cbaf202e16a53ae1df982f0c711263c8586d60dccb1fded5c7f40ba25c
 
-**The error dissapeared when increasing the gaslimit from 50000 to 500000**
+**The error disappeared when increasing the gaslimit from 50000 to 500000**
 
 
 
