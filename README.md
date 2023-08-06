@@ -13,6 +13,7 @@ https://sepolia.etherscan.io/tx/0xcf86e87f1b8e300139c084250c6e667195b8c612f9cd4e
 
 ### Vote transactions
 * https://sepolia.etherscan.io/tx/0xfd1ef1ce8c160236837f4e16f14f6c42ecf6a7f8bea475927c6718863518e7bb
+* https://sepolia.etherscan.io/tx/0xe37b2d6acee209f3cf9ab4315845470d3d53e14e30e519cbed8a6c817b0a4cdf
 
 
 ### Rejected vote transactions 
